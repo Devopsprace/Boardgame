@@ -1,4 +1,4 @@
-//This is test Pipeline auto trigger when Push in QA branch
+// This is test Pipeline auto trigger when Push in QA branch
 pipeline {
     agent { label 'Prod-release' }
 
@@ -19,12 +19,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
-		
-	 stage('Package') {
+
+        stage('Package') {
             steps {
                 sh 'mvn package'
             }
-        }	
+        }
     }
 
     post {
@@ -33,6 +33,6 @@ pipeline {
         }
         failure {
             echo 'Build failed on QA branch.'
-	}
-     }	
-   }
+        }
+    }
+}
