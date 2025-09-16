@@ -1,6 +1,6 @@
 // This is test Pipeline auto trigger when Push in QA branch
 pipeline {
-    agent { label 'Prod-release' }
+    agent { label 'PROD-APP-RELEASE' }
 
     tools {
         maven 'mvn3.9'
