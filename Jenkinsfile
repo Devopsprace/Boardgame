@@ -9,14 +9,6 @@ pipeline {
 
    
     stages {
-   
-       stage('GIT Checkout') {
-            steps {
-                git url: 'https://github.com/Devopsprace/Boardgame.git', branch: 'QA'
-            }
-        }
-  
-
       stage('Compile') {
             steps {
                 sh 'mvn compile'
