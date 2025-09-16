@@ -2,8 +2,8 @@ pipeline {
     agent { label 'Prod-release' }
 
     tools {
-        maven 'maven3.9'
-        jdk 'jdk17'
+        maven 'mvn3.9'
+        jdk 'JDK-17'
     }
 
     stages {
