@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Prod-release' }
+    agent { label 'PROD-APP-RELEASE' }
 
     tools {
         maven 'mvn3.9'
